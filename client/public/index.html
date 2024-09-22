@@ -1,43 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Caranouga">
+        <title>FlowBoard</title>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+        <link href="%PUBLIC_URL%/assets/css/global.css" rel="stylesheet" crossorigin="anonymous">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <!-- Favicons -->
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <!-- manifest.json provides metadata used when your web app is installed on a user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/ -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+
+        <div class="col-lg-8 pb-4 pr-4p y-md-5 w-max" id="root">
+            <main>
+                <h1 class="text-body-emphasis">Get started with Bootstrap</h1>
+                <p class="fs-5 col-md-8">Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
+    
+                <div class="mb-5">
+                    <a href="/docs/5.3/examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
+                </div>
+    
+                <hr class="col-3 col-md-2 mb-5">
+    
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <h2 class="text-body-emphasis">Starter projects</h2>
+                        <p>Ready to go beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
+                        <ul class="list-unstyled ps-0">
+                            <li>
+                                <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/icons-font" rel="noopener" target="_blank">
+                                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                    Bootstrap npm starter
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/parcel" rel="noopener" target="_blank">
+                                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                    Bootstrap Parcel starter
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/vite" rel="noopener" target="_blank">
+                                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                    Bootstrap Vite starter
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/webpack" rel="noopener" target="_blank">
+                                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                    Bootstrap Webpack starter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <h2 class="text-body-emphasis">Guides</h2>
+                        <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+                        <ul class="list-unstyled ps-0">
+                            <li>
+                                <a class="icon-link mb-1" href="/docs/5.3/getting-started/introduction/">
+                                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                Bootstrap quick start guide
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon-link mb-1" href="/docs/5.3/getting-started/webpack/">
+                                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                Bootstrap Webpack guide
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon-link mb-1" href="/docs/5.3/getting-started/parcel/">
+                                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                Bootstrap Parcel guide
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon-link mb-1" href="/docs/5.3/getting-started/vite/">
+                                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                Bootstrap Vite guide
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon-link mb-1" href="/docs/5.3/getting-started/contribute/">
+                                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                Contributing to Bootstrap
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+            <footer class="pt-5 my-5 text-body-secondary border-top">
+                Created by the Bootstrap team &middot; &copy; 2024
+            </footer>
+        </div>
+    </body>
 </html>
