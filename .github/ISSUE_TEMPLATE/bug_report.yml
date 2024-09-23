@@ -1,0 +1,44 @@
+name: Bug report
+description: Template for bug reports
+title: '[🐛 BUG]: '
+labels:
+  - bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the bug
+      description: A clear and concise description of what the bug is
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: >-
+        Steps to reproduce the behavior. For example, "1. Go to '...', 2. Click
+        on '...', 3. See error"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information and data
+  - type: checkboxes
+    id: before-opening
+    attributes:
+      label: Before opening an issue
+      options:
+        - label: Already checked the issues for an already existing issue
+          required: true
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
