@@ -23,7 +23,7 @@ jobs:
         with:
           fetch-depth: 0
           repository: Caranouga/FlowBoard
-          ref: master
+          ref: main
       - name: Update labels
         uses: actions/labeler@v5
         with:
