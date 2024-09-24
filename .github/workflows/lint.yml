@@ -16,7 +16,11 @@ jobs:
           node-version: '20'  # Specify your Node.js version
 
       - name: Install dependencies
-        run: yarn install
+        run: |
+          cd client  # Change to the directory containing package.json
+          yarn install
 
       - name: Run ESLint
-        run: yarn lint
+        run: |
+          cd client  # Change to the directory containing package.json
+          yarn lint
