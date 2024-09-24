@@ -6,6 +6,7 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -16,7 +17,11 @@ jobs:
           node-version: '20'  # Specify your Node.js version
 
       - name: Install dependencies
-        run: yarn install
+        run: |
+          cd client  # Change to the directory where package.json is located
+          yarn install
 
-      - name: Run tests
-        run: yarn test
+      - name: Run Tests
+        run: |
+          cd client  # Change to the directory where package.json is located
+          yarn test
