@@ -1,0 +1,26 @@
+# .github/workflows/lint.yml
+name: Lint Code
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # Specify your Node.js version
+
+      - name: Install dependencies
+        run: |
+          cd client  # Change to the directory containing package.json
+          yarn install
+
+      - name: Run ESLint
+        run: |
+          cd client  # Change to the directory containing package.json
+          yarn lint
